@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html><head>
+    <title>FractTree</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Cantarell|Jua" rel="stylesheet">
+
+    <style>
+body {
+  background-color: #2d2d2d;
+}
+
+h1 {
+  color: #d0ffc9;
+  font-size: 100px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+}
+#container{
+  margin: 80px 50px;
+  //background-color: red;
+  padding: 30;
+  color: white;
+   font-family: 'Cantarell', sans-serif;
+}
+
+#inputfeild{
+ float: left;
+ color: white;
+}
+#treeform{
+  float: left;
+
+}
+#canvas{
+  margin: 80px ;
+  padding: 10px;
+
+
+}
+</style>
+
+</head>
+
+
+
+<body> <!---  BODY ---------->
+<div>
+  <h1>Fractal Tree</h1>
+  <br>
+</div>
+<div id="container">
+  <div id="form">
+
+ <form id ="treeform">
+   <p>Enter Lenght of Limiting branch : <p>
+   <input type="text" name="minlen" value="50" id="minlen">
+   <br>
+   <p>Enter Angle : <p>
+   <input type="text" name="minlen" value="10" id="angle">
+    <button type="button" id="valbutton">Update Tree!</button> 
+
+ </form>
+</div>
+  <div id="canvas">
+    <script src="p5/p5.min.js"></script>
+       <script src="sketch.js"></script>
+       <script language="javascript" type="text/javascript" src="p5/addons/p5.dom.js">-->
+    </script>
+
+  </div>
+</div>
+
+
+</body>
+
+</html>
