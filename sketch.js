@@ -1,9 +1,10 @@
 
 
 var slider;
-var trunk=200;
+var trunk=document.getElementById('trunk').value;
 var brno=document.getElementById('minlen').value;
 var piby=document.getElementById('angle').value;
+var trdr=document.getElementById('redrate').value;
 console.log(document.getElementById('minlen').value)
 console.log(document.getElementById('angle').value);
 
@@ -11,8 +12,12 @@ console.log(document.getElementById('angle').value);
 document.getElementById('valbutton').onclick= function(){
   console.log(document.getElementById('minlen').value);
   console.log(document.getElementById('angle').value);
+  console.log(document.getElementById('redrate').value);
+  console.log(document.getElementById('trunk').value);
+  trunk=document.getElementById('trunk').value;
    brno=document.getElementById('minlen').value;
    piby=document.getElementById('angle').value;
+   trdr=document.getElementById('redrate').value;
    clear();
 
 }
@@ -39,7 +44,7 @@ function draw() {
  function branch(len){
 
      push();
-     br=len*0.8;
+     br=len*trdr;
      drawline(br,PI/piby);
      if(br>brno){
      branch(br);
@@ -47,21 +52,20 @@ function draw() {
       pop();
 
    push();
-   br=len*0.8;
+   br=len*trdr;
    drawline(br,-PI/piby);
    if(br>brno){
    branch(br)
     }
    pop();
 
-//   push();
-  // br=len*0.8;/
-//   drawline(br,0);
-//   if(br>brno){
-//   branch(br)
+  // push();
+  // br=len*trdr;
+  // drawline(br,0);
+  // if(br>brno){
+  // branch(br)
   //  }
   // pop();
-
 
 
 
